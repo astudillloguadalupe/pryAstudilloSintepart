@@ -20,7 +20,21 @@ namespace pryAstudilloSp1
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             CalcularContraseña();
+            if (cmbMódulo.Text!="")
+            {
+                btnAceptar.Enabled = true;
+             
+            }
+            else
+            {
+                btnAceptar.Enabled = false;
+            }
+
         }
+
+
+
+
 
         private void btnCancelar_Click(object sender, EventArgs e)
         {

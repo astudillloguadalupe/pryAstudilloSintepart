@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             label1 = new Label();
             l = new Label();
             lblMódulo = new Label();
@@ -88,6 +89,7 @@
             // cmbMódulo
             // 
             cmbMódulo.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbMódulo.Enabled = false;
             cmbMódulo.FormattingEnabled = true;
             cmbMódulo.Items.AddRange(new object[] { "ADM", "SIST", "COM", "VTA" });
             cmbMódulo.Location = new Point(150, 162);
@@ -130,6 +132,7 @@
             Controls.Add(l);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "frmLogin";
             StartPosition = FormStartPosition.CenterScreen;
